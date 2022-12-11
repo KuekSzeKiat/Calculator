@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="parent">
+      <div class="parent2">
+        <div class="middle">
+          <h1>CALCULATOR</h1>
+        </div>
+        <div class="a">
+          <p id="output"></p>
+        </div>
+        <div class="abc no-border">
+          <label for="firstNumber"></label>
+          <input
+            type="number"
+            id="firstNumber"
+            name="firstNumber"
+            placeholder="First Number"
+            class="number-left"
+          />
+        </div>
+        <div class="abc no-border">
+          <label for="secondNumber"></label>
+          <input
+            type="number"
+            id="secondNumber"
+            name="secondNumber"
+            placeholder="Second Number"
+            class="number-right"
+          />
+        </div>
+        <div class="abc left">
+          <label for="plus"></label>
+          <input
+            type="button"
+            value="+"
+            class="operator"
+            onclick="calculate(value)"
+          />
+        </div>
+        <div class="abc">
+          <label for="minus"></label>
+          <input
+            type="button"
+            value="-"
+            class="operator"
+            onclick="calculate(value)"
+          />
+        </div>
+        <div class="abc left">
+          <label for="multiply"></label>
+          <input
+            type="button"
+            value="*"
+            class="operator"
+            onclick="calculate(value)"
+          />
+        </div>
+        <div class="abc">
+          <label for="divide"></label>
+          <input
+            type="button"
+            value="/"
+            class="operator"
+            onclick="calculate(value)"
+          />
+        </div>
+        <div class="abc left">
+          <label for="modulus"></label>
+          <input
+            type="button"
+            value="%"
+            class="operator"
+            onclick="calculate(value)"
+          />
+        </div>
+        <div class="abc">
+          <label for="exponent"></label>
+          <input
+            type="button"
+            value="e"
+            class="operator"
+            onclick="calculate(value)"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
